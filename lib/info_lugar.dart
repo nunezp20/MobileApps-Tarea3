@@ -22,8 +22,31 @@ class InfoLugar extends StatelessWidget {
                 color: Color.fromARGB(255, 63, 128, 181),
               ),
               title: TextTop("Balis beach"),
-              subtitle: Wrap(
-                children: [Text("***"), Text("4.1")],
+              subtitle: Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 255, 209, 59),
+                    size: 16,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 255, 209, 59),
+                    size: 16,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 255, 209, 59),
+                    size: 16,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 255, 209, 59),
+                    size: 16,
+                  ),
+                  SizedBox(width: 4),
+                  Text("4.1"),
+                ],
               ),
             ),
             // Datos del hotel
