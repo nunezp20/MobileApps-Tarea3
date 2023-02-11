@@ -67,14 +67,19 @@ class HomePage extends StatelessWidget {
                         },
                       ),
                     ),
-                    MaterialButton(
-                      onPressed: () {},
-                      child: Text("Start booking"),
-                      color: Colors.red,
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("Start booking",
+                            style: TextStyle(color: Colors.white)),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.red),
+                      ),
                     ),
                   ],
                 ),
-              ),
+              )
             ],
           );
         },
