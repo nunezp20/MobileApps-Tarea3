@@ -21,11 +21,19 @@ class HomePage extends StatelessWidget {
               Align(
                 alignment: Alignment.topCenter,
                 child: Container(
-                  height: 150,
+                  height: constraints.maxHeight * 0.25,
                   width: MediaQuery.of(context).size.width,
-                  color: Colors.green,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          "https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  ),
                 ),
               ),
+
               // para poder poner column o listview en stack hay que encerrarlas en positioned y anclarla a todos lados
               Positioned(
                 top: 64,
