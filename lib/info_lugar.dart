@@ -16,7 +16,11 @@ class InfoLugar extends StatelessWidget {
           children: [
             // Titulo con icono y estrellas
             ListTile(
-              leading: Icon(Icons.surfing),
+              leading: Icon(
+                Icons.surfing,
+                size: 48,
+                color: Color.fromARGB(255, 63, 128, 181),
+              ),
               title: TextTop("Balis beach"),
               subtitle: Wrap(
                 children: [Text("***"), Text("4.1")],
